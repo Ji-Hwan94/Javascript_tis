@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigator</title>
+    <script>
+        // 현재 방문자가 사용하는 브라우저 정보와 운영체제 정보를 제공하는 객체입니다.
+        var info = navigator.userAgent.toLowerCase();
+        console.log(info);
+        var osImg = null;
+
+        if(info.indexOf('windows') >= 0){
+            osImg = "windows.png";
+        } else if (info.indexOf('macintosh') >= 0) {
+            osImg = "macintosh.png";
+        } else if (info.indexOf('iphone') >= 0) {
+            osImg = "iphone.png";
+        } else if (info.indexOf('android') >= 0) {
+            osImg = "android.png";
+        }
+
+        document.write("<img src=\"img/" +osImg+ "\">", "<br>");
+    </script>
+</head>
+<body>
+</body>
+</html>

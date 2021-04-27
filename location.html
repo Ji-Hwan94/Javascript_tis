@@ -7,7 +7,8 @@
     <title>Location</title>
     <script>
         function goNaver(){
-            location.href="https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=1&acr=1&acq=java&qdt=0&ie=utf8&query=javascript";
+            var keyword = prompt("검색어를 입력하세요", "");
+            location.href="https://search.naver.com/search.naver?where=nexearch&sm=top_sug.pre&fbm=1&acr=1&acq=java&qdt=0&ie=utf8&query=" +keyword;
         }
     </script>
 </head>

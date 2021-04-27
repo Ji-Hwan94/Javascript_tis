@@ -8,10 +8,20 @@
     <script>
         var addNum = 0;
         var subNum = 1000;
-        var auto_1=setInterval(function(){
+        
+        // 함수를 만드는 방법 1
+        // var auto_1=setInterval(function(){
+        //     addNum++;
+        //     console.log("addNum: " + addNum);
+        // }, 3000);
+
+        // 함수를 만드는 방법 2 
+        function myFuc(){
             addNum++;
             console.log("addNum: " + addNum);
-        }, 3000);
+        }
+        //  함수를 호출 하는 것이 아니라, 함수의 이름만 부른다.
+        var auto_1 = setInterval(myFuc, 3000);
     </script>
 </head>
 <body>
