@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+    <script>
+        var d = new Array();
+        d[0] = 30;
+        d[1] = "따르릉";
+        d[2] = true;
+        
+        var a = new Array(30, "따르릉" , true);
+
+        var b = [30, "따르릉", true];
+
+        // for문을 통해서 배열의 값을 꺼낸다.
+        for (i=0; i<b.length; i++){
+            console.log(b[i]);
+        } 
+
+        var arr = [
+            {name:"홍길동", address:"서울"},
+            {name:"이순신", address:"인천"}
+        ]
+        console.log(arr[0]);
+        console.log(arr[1]);
+        console.log(arr[1].name);
+        for(i=0; i<arr.length;i++){
+            console.log(arr[i].name);
+            console.log(arr[i].address);
+        }
+
+        var hkd = {
+            name:"홍길동",
+            hobby:["등산", "독서", "서핑", "영화감상"],
+            department: "컴퓨터공학"
+        };
+        console.log(hkd.name);
+        // console.log(hkd.hobby[0]);
+        // console.log(hkd.hobby[1]);
+        for(i=0;i<hkd.hobby.length; i++){
+            console.log(hkd.hobby[i]);
+        }
+        console.log(hkd.department);
+
+        var goods = [
+            {series:"갤럭시",
+            model:[
+                {name:"갤럭시s21", price:1000000},
+                {name:"갤럭시노트20", price:1500000}
+            ]
+            },
+            {series:"아이폰", 
+            model:[
+                {name:"아이폰11pro", price:1500000},
+                {name:"아이폰11", price:10000000}
+            ]
+            }
+        ];
+        console.log(goods[0]);
+        console.log(goods[1]);
+        console.log(goods[0].series);
+        console.log(goods[0].model);
+        console.log(goods[0].model[0]);
+        console.log(goods[0].model[0].name);
+
+        for(i=0; i<goods.length;i++){
+            console.log(goods[i].series);
+            for(j=0; j<goods[i].model.length; j++){
+                console.log(goods[i].model[j]);
+            }
+        }
+
+        for(i=0; i<goods.length;i++){
+            console.log(goods[i].series);
+            for(j=0; j<goods[i].model.length; j++){
+                console.log(goods[i].model[j].name);
+            }
+        }
+
+        var arr_1=["사당", "교대", "방배", "강남"];
+        var arr_2=["신사", "압구정", "옥수"];
+        var result=arr_1.join("-");
+        console.log(result);
+        result=arr_1.concat(arr_2);
+        console.log(result);
+        result=arr_1.slice(1,3);
+        console.log(result);
+        
+        var greenArr=["교대", "방배", "강남"];
+        var yellowArr=["미금", "정자", "수서"];
+        
+        greenArr.splice(2, 1, "서초");  // 배열의 기존 요소를 삭제 또는 교체하거나 새 요소를 추가하여 배열의 내용을 변경
+        console.log(greenArr);
+        
+        var data1=yellowArr.pop(); // 마지막 요소 꺼냄
+        console.log(data1);
+        console.log(yellowArr);
+        
+        var data2=yellowArr.shift(); // 처음 요소 꺼냄
+        console.log(data2);
+        console.log(yellowArr);
+        
+        yellowArr.push(data2); // 요소 추가
+        console.log(yellowArr);
+
+        yellowArr.unshift(data1); // 처음 요소에 넣는다.(추가)
+        console.log(yellowArr);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

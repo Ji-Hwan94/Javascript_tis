@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen</title>
+    <script>
+        console.log(screen.width);
+        console.log(screen.height);
+
+        // 작업표시줄의 크기는 제외한다.
+        console.log(screen.availWidth);
+        console.log(screen.availHeight);
+
+        popupX=(screen.width-500)/2;
+        popupY=(screen.height-700)/2;
+        
+        // popup창을 정중앙에 띄우는 방법
+        window.open("http://ghkdrbqhd.dothome.co.kr/movie", "movie", "width=500, height=700, left="+popupX+", top="+popupY);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

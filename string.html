@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <script>
+        var t = new String("Hello Javascript");
+        console.log(t);
+        var s = "Hello Javascript";
+        console.log(s);
+
+        var file = "a.b.c.txt";
+        console.log(file.indexOf(".")); // 첫번째 문자의 자리의 수 가져온다.
+        console.log(file.lastIndexOf(".")); // 마지막 문자의 자리의 수를 가져온다.
+        console.log(file.substr(file.lastIndexOf(".")+1)); // 마지막 .까지의 문자를 삭제한다.
+        console.log(file.split(".")[file.split(".").length-1]); // .를 기준으로 분할을 한다.(배열로 나타난다.) []안은 몇번째 배열의 문자를 가져올지 나타낸다.
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
