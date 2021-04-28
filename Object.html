@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+    <script>
+        var tv = new Object();
+        tv.color = "white";
+        tv.price = 30000000;
+        tv.info = function(){
+            document.write("tv 색상 : " + this.color, "<br>")
+            document.write("tv 가격 : " + this.price, "<br>")
+        }
+        document.write("<h1>TV 메소드 호출</h1>")
+        tv.info();
+
+        var car = { // car는 객체(인스턴스), '='뒤에 '{}'가 오면 객체를 의미한다. / '[]'는 배열이다.
+            color: "black", // 멤버변수
+            price: 50000000, // 멤버변수
+            info: function(){ // 메서드
+                document.write("car 색상 : " + this.color, "<br>" );
+                document.write("car 가격 : " + this.price, "<br>" );
+            }
+        };
+
+        document.write("<h1>car 메서드 호출 </h1>" );
+        car.info();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

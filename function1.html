@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Function</title>
     <script>
-        // 함수 만드는 방법 1
+        // 함수 만드는 방법 1 (기본형)
         var count = 0;
         function myFuc(){
             count++;
@@ -14,12 +14,20 @@
         }
         myFuc();
 
-        // 함수 만드는 방법 2
+        // 함수 만드는 방법 2 (함수래퍼런스 + 익명함수)
         var theFnc = function(){
             count++;
             document.write("hello"+count, "<br>");
         }
         theFnc();
+
+        // 함수를 만드는 방법 3 (즉시 실행 함수 with 익명 함수)
+        (function(){
+            count++;
+            document.write("hello"+count, "<br>");
+        })();
+
+        // 함수를 만드는 방법 4 (람다식)
     </script>
 </head>
 <body>
